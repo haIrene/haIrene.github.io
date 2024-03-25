@@ -1,0 +1,131 @@
+.wrap {
+  font-family: 微軟正黑體, 思源黑體;
+  background-color: #fbe6b0;
+  width: 100%;
+  margin: 0px;
+  color: rgb(63, 61, 61);
+  /* overflow: hidden; */
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(63, 61, 61);
+}
+/* 導覽列 */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  background-color: #ffffe0;
+  height: 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+.navitem {
+  display: flex;
+  padding: 5px;
+  /* background-color: #b8b8ff; */
+  /* border-radius: 5px; */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.navitem__text {
+  color: #666565;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navitem:hover {
+  top: -4px;
+}
+/* item */
+.itemDisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* pic */
+.picture {
+  padding: 10%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+/* about me */
+.aboutBlock {
+  margin: 6% 6%;
+  padding: 1%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3d3d3;
+  width: 32%;
+  height: fit-content;
+}
+.quoteStyle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro {
+  font-family: Comic Sans MS;
+  font-size: 30px;
+}
+footer {
+  text-align: center;
+  background-color: #ffffe0;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 在你的 CSS 文件中 */
+/* 對不同的設備進行媒體查詢 */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 24px; /* 將標題字體大小調小 */
+  }
+  header {
+    flex-direction: column; /* 在小尺寸設備上將導覽列排成縱向 */
+    height: auto; /* 清除高度限制 */
+  }
+  .navitem {
+    padding: 3px; /* 調整導覽項目的內邊距 */
+    font-size: 15px;
+  }
+  .picture {
+    width: 150px; /* 減小圖片尺寸 */
+    height: 150px;
+  }
+  .aboutBlock {
+    width: 90%; /* 調整關於我區塊的寬度 */
+    margin: 10px auto; /* 居中顯示 */
+  }
+  footer {
+    position: static; /* 使 footer 隨內容而定位 */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 32px; /* 中等尺寸設備上的標題字體大小 */
+  }
+  .navitem {
+    padding: 5px; /* 中等尺寸設備上導覽項目的內邊距 */
+  }
+}
+
+/* 如果需要，你可以添加更多的媒體查詢以適應其他尺寸的設備 */
