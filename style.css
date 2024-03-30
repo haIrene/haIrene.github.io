@@ -63,7 +63,7 @@ nav {
 }
 /* about me */
 .aboutBlock {
-  margin: 6% 6%;
+  margin: 5% 6%;
   padding: 1%;
   border-radius: 10px;
   display: flex;
@@ -79,6 +79,28 @@ nav {
   flex-direction: column;
 }
 
+.hobby1 {
+  background-color: #b09764;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hallIntro{
+  margin: 0% 6%;
+  padding: 1%;
+  border-radius: 10px;
+  width: 32%;
+  height: fit-content;
+}
+
 .intro {
   font-family: Comic Sans MS;
   font-size: 30px;
@@ -91,6 +113,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
 /* 在你的 CSS 文件中 */
 /* 對不同的設備進行媒體查詢 */
