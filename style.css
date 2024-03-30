@@ -93,6 +93,19 @@ nav {
   justify-content: space-between;
 }
 
+.chiwa{  
+  margin: 6% auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cheword{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #ff8c00;
+}
+
 .hallIntro{
   margin: 0% 6%;
   padding: 1%;
